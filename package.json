@@ -1,0 +1,7 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "dependencies": {
+    "@types/node": "^17.0.16"
+  }
+}
