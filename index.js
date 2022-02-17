@@ -1,3 +1,4 @@
+/*
 let title = "Title"; // moje da se promenq
 console.log(title);
 const age = 1;
@@ -45,3 +46,45 @@ const secondFunc = () => { //anonimna funkciq/arrow function/lambda funkciq
 }
 
 secondFunc();
+*/
+let data =[
+    10,
+    7,
+    25,
+    10,
+    56,
+    16,
+    19,
+    22
+]
+// const modifiedArray = []
+// for (let element of data){
+//     if (element === 7){
+//         element = 17
+//     }
+//     modifiedArray.push(element)
+// }
+// console.log(modifiedArray)
+
+data.map ((element) => {
+    if (element === 7){
+        element = 17
+    }
+    console.log(element)
+    return element
+})
+
+const filteredData = data.filter((element) => {
+    if (element >= 12) {
+        return element;
+    }
+})
+console.log(filteredData)
+
+const foundElement = data.find((element) => {
+    if (element === 25) {
+        return element;
+    }
+})
+console.log(foundElement)
+
